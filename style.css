@@ -1,0 +1,145 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #2b2b2b;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.game-container {
+  position: relative;
+  width: 900px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.table-container {
+  position: relative;
+}
+
+canvas {
+  border: 10px solid #5d4037;
+  border-radius: 5px;
+  background: #0a4d25;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.score {
+  position: absolute;
+  top: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#player1Score {
+  left: 20px;
+}
+
+#player2Score {
+  right: 20px;
+}
+
+.player-balls {
+  position: absolute;
+  top: 50px;
+  color: white;
+  font-size: 16px;
+  text-shadow: 1px 1px 1px black;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  max-width: 200px;
+}
+
+#player1Balls {
+  left: 20px;
+}
+
+#player2Balls {
+  right: 20px;
+}
+
+.turn-message {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.game-message {
+  width: 100%;
+  text-align: center;
+  color: #ffcc00;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.instructions {
+  width: 100%;
+  text-align: center;
+  color: #ccc;
+  font-size: 16px;
+  text-shadow: 1px 1px 1px black;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+.reset-btn {
+  padding: 8px 16px;
+  background: #5d4037;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.reset-btn:hover {
+  background: #8d6e63;
+}
+
+.ball-message {
+  position: absolute;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+  pointer-events: none;
+}
+
+.foul-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 100;
+}
