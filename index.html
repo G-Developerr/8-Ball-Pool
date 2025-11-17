@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <title>8-Ball Pool Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="preload">
+
+
+    <!-- Αρχικό Μενού Επιλογής -->
+    <div id="mainMenu" class="menu-fullscreen">
+        <h1 class="menu-title">🎱 8 Ball Pool</h1>
+        <div class="menu-buttons">
+            <button class="menu-btn" onclick="startGame(false)">👥 2 Παίκτες</button>
+            <button class="menu-btn" onclick="startGame(true)">🤖 Παίξε με Bot</button>
+        </div>
+    </div>
+
+
+
+    <div class="game-container" style="display: none;">
+        <div class="message-container">
+            <div id="turnMessage" class="turn-message">Player 1's turn</div>
+            <div id="gameMessage" class="game-message">BREAK! Hit the balls hard!</div>
+
+            <div class="score-container">
+                <div id="player1Score" class="score">Player 1: 0</div>
+                <div id="player2Score" class="score">Player 2: 0</div>
+            </div>
+
+            <div class="balls-container">
+                <div id="player1Balls" class="player-balls">Player 1 Balls:</div>
+                <div id="player2Balls" class="player-balls">Player 2 Balls:</div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <canvas id="poolTable" width="1100" height="600"></canvas>
+        </div>
+
+        <div class="instructions-container">
+            <div id="instructions" class="instructions">Drag mouse from cue ball to shoot</div>
+        </div>
+
+        <div class="reset-container">
+            <button id="resetBtn" class="reset-btn">Reset Game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
