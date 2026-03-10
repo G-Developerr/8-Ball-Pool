@@ -7,7 +7,7 @@ A browser-based 8-ball pool game built with HTML5 Canvas and JavaScript.
 
 ## 📸 Preview
 
-![8-Ball Pool Game]8-Ball-Pool-View.jpg)
+!(8-Ball-Pool-View.jpg)
 
 
 ## 🎮 Game Modes
