@@ -3,7 +3,7 @@
 A browser-based 8-ball pool game built with HTML5 Canvas and JavaScript.
 
 ## 🚀 Live Demo
-[Play Now] ((https://g-developerr.github.io/8-Ball-Pool/) )
+[Play Now] (https://g-developerr.github.io/8-Ball-Pool/) )
 
 ## 🎮 Game Modes
 - 👥 **2 Player** — Play against a friend on the same device
